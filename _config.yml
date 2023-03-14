@@ -1,38 +1,43 @@
 title: Huixin Sun
+author: Huixin Sun
 email: sunhuixin@buaa.edu.cn
-description: > # this means to ignore newlines until "show_excerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: > # this means to ignore newlines until "show_exerpts:"
+ Welcome to my academic website. You are probably here to see pictures of my cat. Otherwise, read on. 
+ I am a second year computer science PhD student at Beihang University. I am advised by Baochang Zhang and Xianbin Cao and am a member of the Shenyuan Hornor College. 
+ Previously I was a researcher at Baidu AI. 
+ Feel free to contact me at sunhuixin@buaa.edu.cn.
 
-show_excerpts: false # set to true to show excerpts on the homepage
+show_excerpts: true # set to true to show excerpts on the homepage
 
-lin:
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+sass:
+  sass_dir: _sass
+
+permalink: /posts/:title/
+texture:
+  title: Huixin Sun
+  tagline: Ph.D. Student
   date_format: "%b %-d, %Y"
+  style: black
+  showNav: false
+  showPicker: true
 
-  # path to the author avatar image
-  avatar_path: assets/images/avatar.jpg
-
-  # generate social links
+  # generate social links in footer
   social_links:
-    twitter: jekyllrb
-    github:  jekyll
-    medium:  jekyll
+    github:  thelehhman
+    linkedIn: in/thelehhman
     rss: rss
-    dribbble: jekyll
-    facebook: jekyll
-    flickr:   jekyll
-    instagram: jekyll
-    linkedin: jekyll
-    pinterest: jekyll
-    youtube_user: jekyll
-    youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
-    telegram: jekyll
-    googleplus: +jekyll
-    keybase: jekyll
+ 
 
-theme: lin
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.md
+
+# Build settings
+# theme: texture
 
 plugins:
- - jekyll-feed
- - jekyll-seo-tag
+  - jekyll-seo-tag
+#  - jekyll-feed
